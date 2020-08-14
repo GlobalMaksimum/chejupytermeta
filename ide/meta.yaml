@@ -20,7 +20,7 @@ spec:
         type: ide
   containers:
     - name: jupyter-notebook
-      image: "registry.192.168.39.191.nip.io/gbm/gbmjc:0.5"
+      image: "registry.192.168.39.191.nip.io/gbm/gbmjc:0.7"
       env:
         - name: JUPYTER_NOTEBOOK_DIR
           value: /projects
