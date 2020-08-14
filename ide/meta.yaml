@@ -12,19 +12,29 @@ repository: https://github.com/ws-skeleton/che-editor-jupyter/
 firstPublicationDate: "2020-08-14"
 spec:
   endpoints:
-   -  name: "jupyterc"
+    - name: "jupyterc"
       public: true
       targetPort: 8888
       attributes:
         protocol: http
         type: ide
   containers:
-   - name: jupyter-notebook
-     image: "registry.192.168.39.191.nip.io/gbm/gbmjc:0.1"
-     env:
-         - name: JUPYTER_NOTEBOOK_DIR
-           value: /projects
-     mountSources: true
-     ports:
-         - exposedPort: 8888
-     memoryLimit: "512M"
+    - name: jupyter-notebook
+      image: "registry.192.168.39.191.nip.io/gbm/gbmjc:0.1"
+      env:
+        - name: JUPYTER_NOTEBOOK_DIR
+          value: /projects
+        - name: JUPYTER_GATEWAY_URL
+          value: http://127.0.0.1:8887
+        - name: JUPYTER_GATEWAY_HTTP_USER
+          value: guest
+        - name: JUPYTER_GATEWAY_HTTP_PWD
+          value: guest-password
+        - name: JUPYTER_GATEWAY_VALIDATE_CERT
+          value: "false"
+        - name: LOG_LEVEL
+          value: DEBUG
+      mountSources: true
+      ports:
+        - exposedPort: 8888
+      memoryLimit: "512M"

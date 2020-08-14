@@ -1,7 +1,7 @@
 metadata:
   name: jupyter-gbm
 components:
-  - id: ws-skeleton/jupyter/latest
+  - alias: jupyter-editor
     type: cheEditor
-    reference: https://raw.githubusercontent.com.../plugin/1.0.1/meta.yaml
+    reference: https://raw.githubusercontent.com/capacman/jupytermeta/master/ide/meta.yaml
 apiVersion: 1.0.0
