@@ -1,7 +1,7 @@
 apiVersion: v2
 publisher: ws-skeleton
 name: jupyterc
-version: 0.6
+version: 0.7
 type: Che Editor
 displayName: Jupyter Custom Notebook
 title: Jupyter Custom Notebook as Editor for Eclipse Che
