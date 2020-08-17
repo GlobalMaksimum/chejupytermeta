@@ -13,7 +13,7 @@ components:
     volumes:
       - name: connectionfiles
         containerPath: /home/jovyan/.local/share/jupyter/runtime
-    image: 'registry.192.168.39.191.nip.io/gbm/gbmeg:0.5'
+    image: 'registry.192.168.39.148.nip.io/gbm/gbmeg:0.5'
     alias: enterprise-gateway
     env:
       - name: GM_KERNEL_SPEC
@@ -23,6 +23,6 @@ components:
     volumes:
       - name: connectionfiles
         containerPath: /home/jovyan/.local/share/jupyter/runtime
-    image: 'registry.192.168.39.191.nip.io/gbm/gbmscala:0.4'
+    image: 'registry.192.168.39.148.nip.io/gbm/gbmscala:0.5'
     alias: kernel
 apiVersion: 1.0.0
