@@ -1,7 +1,7 @@
 apiVersion: v2
 publisher: ws-skeleton
 name: jupyterc
-version: 0.7
+version: 0.12
 type: Che Editor
 displayName: Jupyter Custom Notebook
 title: Jupyter Custom Notebook as Editor for Eclipse Che
@@ -33,7 +33,7 @@ spec:
         unique: true
   containers:
     - name: jupyter-notebook
-      image: "registry.192.168.39.148.nip.io/gbm/gbmjc:0.11"
+      image: "registry.192.168.39.148.nip.io/gbm/gbmjc:0.12"
       env:
         - name: JUPYTER_NOTEBOOK_DIR
           value: /projects
