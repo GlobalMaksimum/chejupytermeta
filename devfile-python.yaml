@@ -1,0 +1,28 @@
+metadata:
+  name: jupyter-gbm
+components:
+  - type: cheEditor
+    reference: >-
+      https://raw.githubusercontent.com/GlobalMaksimum/chejupytermeta/master/ide/meta.yaml
+    alias: jupyter-editor
+    env:
+      - name: INITIAL_NOTEBOOK
+        value: python
+  - memoryLimit: 512Mi
+    type: dockerimage
+    volumes:
+      - name: connectionfiles
+        containerPath: /home/jovyan/.local/share/jupyter/runtime
+    image: 'registry.192.168.39.148.nip.io/gbm/gbmeg:0.6'
+    alias: enterprise-gateway
+    env:
+      - name: GM_KERNEL_SPEC
+        value: python
+  - memoryLimit: 1024Mi
+    type: dockerimage
+    volumes:
+      - name: connectionfiles
+        containerPath: /home/jovyan/.local/share/jupyter/runtime
+    image: 'registry.192.168.39.148.nip.io/gbm/gbmpython:0.1'
+    alias: kernel
+apiVersion: 1.0.0
