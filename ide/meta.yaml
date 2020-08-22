@@ -1,14 +1,14 @@
 apiVersion: v2
-publisher: ws-skeleton
+publisher: GlobalMaksimum
 name: jupyterc
-version: 0.13
+version: 0.14
 type: Che Editor
 displayName: Jupyter Custom Notebook
 title: Jupyter Custom Notebook as Editor for Eclipse Che
 description: Jupyter Custom Notebook as Editor for Eclipse Che
 icon: https://jupyter.org/assets/main-logo.svg
 category: Editor
-repository: https://github.com/ws-skeleton/che-editor-jupyter/
+repository: https://github.com/GlobalMaksimum/gbm-jupyter-docker-stack
 firstPublicationDate: "2020-08-14"
 spec:
   endpoints:
@@ -33,7 +33,7 @@ spec:
         unique: true
   containers:
     - name: jupyter-notebook
-      image: "registry.192.168.39.148.nip.io/gbm/gbmjc:0.22"
+      image: "registry.192.168.39.148.nip.io/gbm/gbmjc:0.23"
       env:
         - name: JUPYTER_NOTEBOOK_DIR
           value: /projects

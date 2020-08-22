@@ -3,7 +3,7 @@ metadata:
 components:
   - type: cheEditor
     reference: >-
-      https://raw.githubusercontent.com/capacman/jupytermeta/master/ide/meta.yaml
+      https://raw.githubusercontent.com/GlobalMaksimum/chejupytermeta/master/ide/meta.yaml
     alias: jupyter-editor
     env:
       - name: INITIAL_NOTEBOOK
