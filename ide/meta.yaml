@@ -33,7 +33,7 @@ spec:
         unique: true
   containers:
     - name: jupyter-notebook
-      image: "registry.192.168.39.148.nip.io/gbm/gbmjc:0.23"
+      image: "registry.192.168.39.247.nip.io/gbm/gbmjc:0.23"
       env:
         - name: JUPYTER_NOTEBOOK_DIR
           value: /projects
