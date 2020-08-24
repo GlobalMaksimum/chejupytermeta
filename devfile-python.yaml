@@ -26,3 +26,5 @@ components:
     image: 'registry.192.168.39.247.nip.io/gbm/gbmpython:0.1'
     alias: kernel
 apiVersion: 1.0.0
+attributes:
+  persistVolumes: "false"
