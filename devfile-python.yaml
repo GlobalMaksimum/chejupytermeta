@@ -5,8 +5,6 @@ components:
     image: "registry.192.168.39.247.nip.io/gbm/gbmjc:0.34"
     alias: jupyter-editor
     env:
-      - name: INITIAL_NOTEBOOK
-        value: python
       - name: JUPYTER_NOTEBOOK_DIR
         value: /projects
       - name: JUPYTER_GATEWAY_URL
