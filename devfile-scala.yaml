@@ -17,6 +17,8 @@ components:
         value: "false"
       - name: LOG_LEVEL
         value: DEBUG
+      - name: INITIAL_NOTEBOOK
+        value: scala
     endpoints:
       - name: "jupyterc"
         port: 8888
