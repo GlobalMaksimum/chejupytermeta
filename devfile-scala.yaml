@@ -2,7 +2,7 @@ metadata:
   name: jupyter-gbm
 components:
   - type: dockerimage
-    image: "registry.192.168.88.233.nip.io/gbm/gbmjc:0.42"
+    image: "registry.192.168.88.233.nip.io/gbm/gbmjc:0.43"
     alias: jupyter-editor
     env:
       - name: JUPYTER_NOTEBOOK_DIR
